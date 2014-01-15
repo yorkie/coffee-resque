@@ -2,6 +2,9 @@
 
 Coffeescript/Node.js port of Resque.
 
+This library has a lower usage of your CPU than technoweenie/coffee-resque, because
+it uses BLPOP(Blocking Pop) as a replacement of the original LPOP.
+
 ## USAGE
 
 First, you'll want to queue some jobs in your app:
